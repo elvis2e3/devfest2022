@@ -47,6 +47,7 @@ class _TodoPageState extends State<TodoPage> {
               icon: const Icon(Icons.delete),
               onPressed: (){
                 listTodo.removeAt(index);
+                LocalStorage.add(listTodo);
                 setState(() {
                 });
               },
